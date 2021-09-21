@@ -1,3 +1,13 @@
+#readinput
 em_file = open("receipts.json" , "r+")
 print(em_file.read())
 em_file.close()
+
+#pythonobject
+import json
+data = '{"academic_year" : "2019-2020" , "current_division : "A"}'
+python_obj = json.loads(data)
+print("\nJSON data:")
+print(python_obj)
+print("\nAcademic Year: " , python_obj["academic_year"])
+print("\nCurrent Division : " , python_obj["current_division"])
