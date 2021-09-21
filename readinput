@@ -1,0 +1,3 @@
+em_file = open("receipts.json" , "r+")
+print(em_file.read())
+em_file.close()
