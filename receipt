@@ -5,9 +5,14 @@ em_file.close()
 
 #pythonobject
 import json
-data = '{"academic_year" : "2019-2020" , "current_division : "A"}'
+data = '''{
+  "academic_year": "2019-2020",
+  "current_class_key": "00155940694700386003E17E2F-06A2-4339-BD2E-E8F848A08BFC482012269",
+  "current_division": "A"
+    }'''
 python_obj = json.loads(data)
 print("\nJSON data:")
 print(python_obj)
-print("\nAcademic Year: " , python_obj["academic_year"])
-print("\nCurrent Division : " , python_obj["current_division"])
+print("\nAcademic Year:", python_obj["academic_year"])
+print("Current Division:", python_obj["current_division"])
+print("Current Class Key:", python_obj["current_class_key"])
